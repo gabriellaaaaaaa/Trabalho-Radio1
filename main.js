@@ -5,8 +5,8 @@ const listaDeTeclas= document.querrySelectorALL(".tecla");
 
 let contador=0
 while (contador<listaDeTeclas.length){
-    conts efeito=listaDeTeclas[contador].classList[1];
-    conts idAudio= '#som_' +efeito;
+    const efeito=listaDeTeclas[contador].classList[1];
+    const idAudio= '#som_' +efeito;
     listaDeTeclas[contador].onclick=fuction(){
         tocaSom(idAudio);
     }
